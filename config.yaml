@@ -1,0 +1,19 @@
+listen:
+  addr: "0.0.0.0:4000"
+
+admin:
+  addr: "0.0.0.0:8080"
+
+proxy:
+  user: "root"
+  password: ".pwl123456"
+
+backends:
+  - addr: "192.168.31.200:3306"
+    user: "root"
+    password: ".pwl123456"
+
+pool:
+  min_alive: 2
+  max_alive: 10
+  max_idle: 5
